@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HeartRate_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="23" id="ROI-sl-iVR">
+                            <items>
+                                <button width="1" alignment="left" title="Start" id="aNr-9Q-GUy">
+                                    <connections>
+                                        <action selector="startStopTapped" destination="AgC-eL-Hgc" id="LiZ-OV-Zxl"/>
+                                    </connections>
+                                </button>
+                                <group width="1" alignment="left" spacing="0.0" id="l47-Dn-xtC">
+                                    <items>
+                                        <label width="61" height="33" alignment="left" text="HR" id="a79-4o-qcT">
+                                            <fontDescription key="font" type="system" pointSize="33"/>
+                                        </label>
+                                        <label width="46" height="40" alignment="left" text="bpm" id="nKa-Sl-d59"/>
+                                    </items>
+                                </group>
+                                <label width="136" height="33" alignment="left" text="Device" id="GWh-tL-fVu"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bpmLabel" destination="a79-4o-qcT" id="Zyj-Cc-KOV"/>
+                        <outlet property="deviceLabel" destination="GWh-tL-fVu" id="K0K-K7-mmM"/>
+                        <outlet property="startStopButton" destination="aNr-9Q-GUy" id="UWI-di-6LQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="14" y="-43"/>
+        </scene>
+    </scenes>
+</document>
